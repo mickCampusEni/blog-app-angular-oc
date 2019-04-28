@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Post} from './model/post';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'blog-app-angular-oc';
+  postList: Post[] = [
+    new Post('First post',
+      'Veternensi imperasset praefecturae Tuscos imperatoris' +
+              ' Galla quadriennio in aetatis anno fratre sui aetatis Galla in Galla ipse atque nono Tuscos.'),
+    new Post('Second post',
+      'Veternensi imperasset praefecturae Tuscos imperatoris' +
+      ' Galla quadriennio in aetatis anno fratre sui aetatis Galla in Galla ipse atque nono Tuscos.'),
+    new Post('Three post',
+      'Veternensi imperasset praefecturae Tuscos imperatoris' +
+      ' Galla quadriennio in aetatis anno fratre sui aetatis Galla in Galla ipse atque nono Tuscos.'),
+  ];
 }
